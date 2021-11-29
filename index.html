@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+    <head>
+        <title>โปรแกรมฝากเงิน-ถอนเงิน</title>
+    </head>
+
+    <body>
+        <form id="form">
+            <span>ประเภท </span> 
+            <select id="Type" >
+                <option>ฝาก</option>
+                <option>ถอน</option>
+            </select>
+            <p>
+                <span>จำนวนเงิน </span>
+                <input type="number" id="Amount" onfocus="this.value=''" required>
+            </p>
+            <button type="submit" id="Add">เพิ่ม</button>
+        </form>
+        <h2>รายการเดินบัญชี</h2>
+        <table id="Transaction">
+            <thead>
+                <tr>
+                    <th>รูปแบบ</th>
+                    <th>จำนวนเงิน</th>
+                    <th>ยอดคงเหลือ</th>
+                    <th>ตัวเลือก</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <script src="app.js"></script>
+    </body>
+</html>
